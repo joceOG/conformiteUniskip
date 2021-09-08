@@ -14,6 +14,14 @@
   <!-- Plugin file -->
   <link rel="stylesheet" href="assets/css/addons/datatables.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    table tr:not(:only-child){
+        cursor: pointer;transition: all .25s ease-in-out;
+    }
+    table tr:not(:only-child):hover{background-color: rgb(18, 139, 209);}
+</style>
+
 </head>
 
 <body>
@@ -97,63 +105,62 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Tiger Nixon
-                    <br>tigernixon@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html" role="button"><span class="text-white text">Voir</center></span></a></td>                                              
+                  <tr  id ='1'> 
+                    <td>Tiger Nixon<br> tigernixon@gmail.com</td>
+                    <td><center><a class="btn btn-info" href="" role="button" onclick=""><span class="text-white text">Voir</center></span></a></td>                                              
                   </tr>
-                  <tr>
+                  <tr  id ='2'>
                     <td>Garrett Winters<br> garretwinters@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td> 
+                    <td><center><a class="btn btn-info" href=""  role="button" onclick=""><span class="text-white text"">Voir</center></span></a></td> 
                   </tr>
-                  <tr>
-                    <td>Ashton Cox<br>ashtoncox@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td> 
+                  <tr id ='3'>
+                    <td>Ashton Cox<br> ashtoncox@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button" ><span class="text-white text">Voir</center></span></a></td> 
                   </tr>
-                  <tr>
-                    <td>Cedric Kelly<br>cedrickelly@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td> 
+                  <tr id ='4'>
+                    <td>Cedric Kelly<br> cedrickelly@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td> 
                   </tr>
-                  <tr>
-                    <td>Airi Satou<br>
-                    airisatou@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td> 
+                  <tr id ='5'>
+                    <td>Airi Satou<br> airisatou@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td> 
                   </tr>
-                  <tr>
-                    <td>Brielle Williamson<br>briellewilliamson@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td> 
+                  <tr id ='6'>
+                    <td>Brielle Williamson<br> briellewilliamson@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td> 
                   </tr>
-                  <tr>
-                    <td>Herrod Chandler<br>herrodchandler@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>
+                  <tr id ='7'>
+                    <td>Herrod Chandler<br> herrodchandler@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>
                   </tr>
-                  <tr>
-                    <td>Rhona Davidson<br>rhonadavidson@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>                                               
+                  <tr id ='8'>
+                    <td>Rhona Davidson<br> 
+                      rhonadavidson@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>                                               
                   </tr>
-                  <tr>
-                    <td>Colleen Hurst<br>colleenhurst@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>                                  
+                  <tr id ='9'>
+                    <td>Colleen Hurst<br> colleenhurst@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>                                  
                   </tr>
-                  <tr>
-                    <td>Sonya Frost<br>sonyafrost@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>
+                  <tr id ='10'>
+                    <td>Sonya Frost<br> sonyafrost@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>
                   </tr>
-                  <tr>
-                    <td>Fiona Green<br>fionagreen@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>
+                  <tr id ='11'>
+                    <td>Fiona Green<br> fionagreen@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>
                   </tr>
-                  <tr>
-                    <td>Shou Itou<br>shouitou@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>
+                  <tr id ='12'>
+                    <td>Shou Itou<br> shouitou@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>
                   </tr>
-                  <tr>
-                    <td>Michelle House<br>michellehouse@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>                                                                                          
+                  <tr id ='13'>
+                    <td>Michelle House<br> michellehouse@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>                                                                                          
                   </tr>
-                  <tr>
-                    <td>Suki Burks<br>sukiburks@gmail.com</td>
-                    <td><center><a class="btn btn-info" href="fiche.html"  role="button"><span class="text-white text">Voir</center></span></a></td>                                              
+                  <tr id ='14'>
+                    <td>Suki Burks<br> sukiburks@gmail.com</td>
+                    <td><center><a class="btn btn-info" href=""  role="button"><span class="text-white text">Voir</center></span></a></td>                                              
                   </tr>
                 </tbody>
               </table>
@@ -171,15 +178,16 @@
           <div class="card-body">
             <div class="container">
               <div class="row">
+
                 <div class="col">
-                  <label class="form-check-label" for="defaultCheck1"><b>Nom</b></label><br>
-                  <label class="form-check-label" for="defaultCheck1">"Nom"</label><br>                                 
-                  <label class="form-check-label" for="defaultCheck1"><b>Prenom</b></label><br>
-                  <label class="form-check-label" for="defaultCheck1">"Prenom"</label><br>  
-                  <label class="form-check-label" for="defaultCheck1"><b>Adresse</b></label><br>
-                  <label class="form-check-label" for="defaultCheck1">"Adresse"</label><br>  
+                  <label class="form-check-label" for="nom" id="lblnom"><b>Nom</b></label><br>
+                  <label class="form-check-label" for="nom1" id="lblnom1">"Nom"</label><br>                               
+                  <label class="form-check-label" for="prenom" id="lblprenom"><b>Prenom</b></label><br>
+                  <label class="form-check-label" for="prenom1" id="lblprenom1">"Prenom"</label><br>  
+                  <label class="form-check-label " for="adresse" id="lbladresse"><b>Adresse</b></label><br>
+                  <label class="form-check-label" for="adresse" id="lbladresse1">"Adresse"</label><br>  
                   <label class="form-check-label" for="defaultCheck1"><b>Cp Ville</b></label><br>
-                  <div id="googleMap" style="width:100%;height:50px;"></div>  
+                 <div id="googleMap" style="width:100%;height:50px;"></div>  
                   <script>
                     function myMap() {
                       var mapProp = {
@@ -190,16 +198,19 @@
                     }
                   </script>
                   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>   
-                </div>
+                </div> 
+
                 <div class="col">
                   <label class="form-check-label" for="defaultCheck1"><b>Date de Naissance</b></label><br>
                   <label class="form-check-label" for="defaultCheck1">"Date de Naissance"</label><br>                                 
                   <label class="form-check-label" for="defaultCheck1"><b>Lieu de Naissance</b></label><br>
                   <label class="form-check-label" for="defaultCheck1">"Lieu de Naissance"</label><br>  
                 </div>
+
                 <div class="col">
                   <img src="assets/img/user.png" style="width: 120px; height:120px;" alt="user">
                 </div>
+
               </div>
             </div>
             <br>
@@ -263,11 +274,11 @@
                 </div>
                 <div class="col">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio12" value="option1">
                     <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio22" value="option2">
                     <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
                   </div>                            
                   <div class="form-check form-check-inline">
@@ -304,7 +315,7 @@
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                         <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
-                      </div> 
+                      </div>  qa
                     </p>
                   </p>
                   <p style="color:brown;">Tampon
@@ -930,10 +941,47 @@
       $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
       $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
     });
+    
+
   </script> 
+
+<script>
+    
+  var table = document.getElementById('dtMaterialDesignExample');
+
+
+  
+  for(var i = 1; i < table.rows.length; i++)
+  {
+      table.rows[i].onclick = function()
+      {
+
+          var st = this.cells[0].innerHTML ;
+          console.log(st);
+          var st1 = st.split(' ');
+          console.log(st1[1]);
+
+        st1[1] = st1[1].replace('<br>', '');
+        console.log("st2 = " + st1[1]);
+
+        console.log("st3 = " + st1[2]);
+
+
+0
+           //rIndex = this.rowIndex;
+           document.getElementById("lblnom1").innerHTML = st1[0] ;
+           document.getElementById("lblprenom1").innerHTML = st1[1];
+           document.getElementById("lbladresse1").innerHTML = st1[2];
+           //document.getElementById("lname").value = this.cells[1].innerHTML;
+          // document.getElementById("age").value = this.cells[2].innerHTML;
+      };
+  }
+
+</script>
+
   <script src="Sortable.min.js"></script>
   <script>
-    
+  
       const dragArea = document.querySelector(".wrapper3");
       new Sortable(dragArea,{
         animation:350,
