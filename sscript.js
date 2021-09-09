@@ -1,4 +1,4 @@
-//var boxs = document.querySelectorAll('.identite');
+    //var boxs = document.querySelectorAll('.identite');
 /*var i =0;
 var next = document.querySelector('#next');
 var last = document.querySelector('#last');
