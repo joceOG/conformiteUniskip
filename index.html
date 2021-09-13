@@ -551,7 +551,7 @@
                 <div class="col-8">
                   <p> Visionneuse</p> <p>
                   <div class="card-body">
-                <iframe src="assets/img/CNI.pdf" width="100%" height="200px">
+                <iframe src="assets/img/carte.pdf" width="100%" height="200px">
                 test
                 </iframe>
               </div>
@@ -633,13 +633,34 @@
           <div class="wrapper">
 
             <div class="card">
-              <div class="card-header" style="background-color: #696969; color:#ffffff;">
-                <b>Visionneuse</b>
+              <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
+                  <b>Visionneuse</b>
               </div>
+    
               <div class="card-body">
-                <iframe src="assets/img/CNI.pdf" width="100%" height="500px"></iframe>
+    
+    
+                <ul id="example6">
+                  <li>
+                    <div class="card-body">
+                      <iframe src="assets/img/carte.pdf" width="100%" height="300px"></iframe>
+                    </div>
+                  </li>
+    
+                  <li>
+                    <div class="card-body">
+                      <iframe src="assets/img/Signature.pdf" width="100%" height="300px"></iframe>
+                    </div>
+                  </li>
+    
+                  
+        
+                </ul>
               </div>
+    
             </div>
+
+            
       
 
               <!--IDENTIFICATION ENTREPRISE-->
@@ -1219,7 +1240,7 @@
   <script src="assets/js/addons/datatables.min.js"></script>
   <script>
     $(document).ready(function () {
-      document.body.style.zoom = "70%" ;
+      document.body.style.zoom = "60%" ;
       $('#dtMaterialDesignExample').DataTable();
       $('#dtMaterialDesignExample2').DataTable();
       $('#dtMaterialDesignExample3').DataTable();
@@ -1279,7 +1300,7 @@
         console.log("st3 = " + st1[2]);
 
 
-0
+
            //rIndex = this.rowIndex;
            document.getElementById("lblnom1").innerHTML = st1[0] ;
            document.getElementById("lblprenom1").innerHTML = st1[1];
@@ -1320,6 +1341,7 @@
     $('#example3').paginate();
     $('#example4').paginate();
     $('#example5').paginate();
+    $('#example6').paginate();
 	</script>
 <script type="text/javascript">
 
