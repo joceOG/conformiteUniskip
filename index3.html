@@ -1,59 +1,1728 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Tutorial</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Brand</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <link rel="stylesheet" href="wstyle.css">
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <!-- Plugin file -->
+  <link rel="stylesheet" href="assets/css/addons/datatables.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<style type="text/css">
+	<link rel="stylesheet" href="jquery.paginate.css" />
+	<style>
+		.paginate { padding: 0; margin: 0; }
+		.paginate > li { list-style: none; padding: 10px 20px; border: 1px solid #ddd; margin: 10px 0; }
+	</style>
 
-.container {
-  margin-top: 20px;
-}
-.page {
-  display: none;
-}
-.page-active {
-  display: block;
-}
+<style>
+    table tr:not(:only-child){
+        cursor: pointer;transition: all .25s ease-in-out;
+    }
+    table tr:not(:only-child):hover{background-color: rgb(18, 139, 209);}
 </style>
+
+</head>
+
 <body>
+ 
+
+  <main class="page landing-page">
+    <div class="row screen2">
+      
+      <div class="col-md-3">
+
+        <div class="card">
+          <div class="card-header" style="background-color: #696969; color:#ffffff;">
+            <b>Clients</b>
+          </div>
+          
+            <div class="container">
+          
+              <br>
+              <!-- Nav pills -->
+              <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+                </li>
+              </ul>
+            
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                      <h3>Menu 2</h3>
+                      <div class="dtMaterialDesignExample_wrapper" width="80%">
+                        <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0"  height="50%">
+                          <thead>
+                            <tr>
+                              <th class="th-sm">Nom/Email</th>
+                              <th class="th-sm">Status (%)</th>
+                              <th class="th-sm">Heure de création</th>
+                              <th class="th-sm">Deadline</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr  id ='1'> 
+                              <td>Tiger Nixon <span class="badge bg-success">Pro</span><br> tigernixon@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>                                                                          
+                            </tr>
+                            <tr  id ='2'>
+                              <td>Garrett Winters <span class="badge bg-secondary">Part</span><br> garretwinters@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='3'>
+                              <td>Ashton Cox <span class="badge bg-secondary">Part</span><br> ashtoncox@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='4'>
+                              <td>Cedric Kelly <span class="badge bg-secondary">Part</span><br> cedrickelly@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='5'>
+                              <td>Airi Satou <span class="badge bg-secondary">Part</span><br> airisatou@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='6'>
+                              <td>Brielle Williamson <span class="badge bg-secondary">Part</span><br> briellewilliamson@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='7'>
+                              <td>Herrod Chandler <span class="badge bg-secondary">Part</span><br> herrodchandler@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='8'>
+                              <td>Rhona Davidson <span class="badge bg-secondary">Part</span><br> 
+                                rhonadavidson@gmail.com</td>
+                                <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>                                              
+                            </tr>
+                            <tr id ='9'>
+                              <td>Colleen Hurst <span class="badge bg-success">Pro</span><br> colleenhurst@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>                                 
+                            </tr>
+                            <tr id ='10'>
+                              <td>Sonya Frost <span class="badge bg-secondary">Part</span><br> sonyafrost@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='11'>
+                              <td>Fiona Green <span class="badge bg-secondary">Part</span><br> fionagreen@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='12'>
+                              <td>Shou Itou <span class="badge bg-secondary">Part</span><br> shouitou@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>
+                            </tr>
+                            <tr id ='13'>
+                              <td>Michelle House <span class="badge bg-secondary">Part</span><br> michellehouse@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>                                                                                          
+                            </tr>
+                            <tr id ='14'>
+                              <td>Suki Burks <span class="badge bg-secondary">Part</span><br> sukiburks@gmail.com</td>
+                              <td>60</td>
+                              <td>07/08/2021:08:09</td>
+                              <td>08/08/2021:08:09</td>                                       
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                   
+    
+    
+    
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                  <h3>Menu 1</h3>
+                  <div class="dtMaterialDesignExample_wrapper" width="80%">
+                    <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0"  height="50%">
+                      <thead>
+                        <tr>
+                          <th class="th-sm">Nom/Email</th>
+                          <th class="th-sm">Status (%)</th>
+                          <th class="th-sm">Heure de création</th>
+                          <th class="th-sm">Deadline</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr  id ='1'> 
+                          <td>Tiger Nixon <span class="badge bg-success">Pro</span><br> tigernixon@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                                                          
+                        </tr>
+                        <tr  id ='2'>
+                          <td>Garrett Winters <span class="badge bg-secondary">Part</span><br> garretwinters@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='3'>
+                          <td>Ashton Cox <span class="badge bg-secondary">Part</span><br> ashtoncox@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='4'>
+                          <td>Cedric Kelly <span class="badge bg-secondary">Part</span><br> cedrickelly@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='5'>
+                          <td>Airi Satou <span class="badge bg-secondary">Part</span><br> airisatou@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='6'>
+                          <td>Brielle Williamson <span class="badge bg-secondary">Part</span><br> briellewilliamson@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='7'>
+                          <td>Herrod Chandler <span class="badge bg-secondary">Part</span><br> herrodchandler@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='8'>
+                          <td>Rhona Davidson <span class="badge bg-secondary">Part</span><br> 
+                            rhonadavidson@gmail.com</td>
+                            <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                              
+                        </tr>
+                        <tr id ='9'>
+                          <td>Colleen Hurst <span class="badge bg-success">Pro</span><br> colleenhurst@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                 
+                        </tr>
+                        <tr id ='10'>
+                          <td>Sonya Frost <span class="badge bg-secondary">Part</span><br> sonyafrost@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='11'>
+                          <td>Fiona Green <span class="badge bg-secondary">Part</span><br> fionagreen@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='12'>
+                          <td>Shou Itou <span class="badge bg-secondary">Part</span><br> shouitou@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='13'>
+                          <td>Michelle House <span class="badge bg-secondary">Part</span><br> michellehouse@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                                                                          
+                        </tr>
+                        <tr id ='14'>
+                          <td>Suki Burks <span class="badge bg-secondary">Part</span><br> sukiburks@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                       
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                  <h3>Menu 2</h3>
+                  <div class="dtMaterialDesignExample_wrapper" width="80%">
+                    <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0"  height="50%">
+                      <thead>
+                        <tr>
+                          <th class="th-sm">Nom/Email</th>
+                          <th class="th-sm">Status (%)</th>
+                          <th class="th-sm">Heure de création</th>
+                          <th class="th-sm">Deadline</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr  id ='1'> 
+                          <td>Tiger Nixon <span class="badge bg-success">Pro</span><br> tigernixon@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                                                          
+                        </tr>
+                        <tr  id ='2'>
+                          <td>Garrett Winters <span class="badge bg-secondary">Part</span><br> garretwinters@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='3'>
+                          <td>Ashton Cox <span class="badge bg-secondary">Part</span><br> ashtoncox@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='4'>
+                          <td>Cedric Kelly <span class="badge bg-secondary">Part</span><br> cedrickelly@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='5'>
+                          <td>Airi Satou <span class="badge bg-secondary">Part</span><br> airisatou@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='6'>
+                          <td>Brielle Williamson <span class="badge bg-secondary">Part</span><br> briellewilliamson@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='7'>
+                          <td>Herrod Chandler <span class="badge bg-secondary">Part</span><br> herrodchandler@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='8'>
+                          <td>Rhona Davidson <span class="badge bg-secondary">Part</span><br> 
+                            rhonadavidson@gmail.com</td>
+                            <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                              
+                        </tr>
+                        <tr id ='9'>
+                          <td>Colleen Hurst <span class="badge bg-success">Pro</span><br> colleenhurst@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                 
+                        </tr>
+                        <tr id ='10'>
+                          <td>Sonya Frost <span class="badge bg-secondary">Part</span><br> sonyafrost@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='11'>
+                          <td>Fiona Green <span class="badge bg-secondary">Part</span><br> fionagreen@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='12'>
+                          <td>Shou Itou <span class="badge bg-secondary">Part</span><br> shouitou@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>
+                        </tr>
+                        <tr id ='13'>
+                          <td>Michelle House <span class="badge bg-secondary">Part</span><br> michellehouse@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                                                                          
+                        </tr>
+                        <tr id ='14'>
+                          <td>Suki Burks <span class="badge bg-secondary">Part</span><br> sukiburks@gmail.com</td>
+                          <td>60</td>
+                          <td>07/08/2021:08:09</td>
+                          <td>08/08/2021:08:09</td>                                       
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+           
+
+          
+        </div>
 
 
-  <div class="container">
-    <div class="jumbotron page" id="page1">
-      <div class="container">
-        <h1 class="display-3">Adding Pagination to your Website</h1><br>
-        <p class="lead">In this article we teach you how to add pagination, an excellent way to navigate large amounts of content, to your website using a jQuery Bootstrap Plugin.</p><br>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Learn More</a></p>
+
+
+
+        <div class="card">
+          <div class="card-header" style="background-color: #696969; color:#ffffff;">
+            <b>HEMDAL</b>
+          </div>
+          <div class="card-body">
+            <div class="row" >
+              <div class="col-4"><center>
+                <label class="form-check-label" for="defaultCheck1"><b>TEST</b></label>     </center>                                                       
+              </div>
+              <div class="col-8"><center>
+                <a href="#" class="btn btn-outline-danger">NEGATIF</a>   <br>
+                <a href="#" class="btn  btn-outline-success">POSITIF</a> </center>  
+              </div> 
+            </div>
+            <div class="row">
+              <a href="#" class="btn btn-secondary">CONTROLE HEMDAL</a>                            
+            </div>
+            <div class="row" >
+                <div class="col-6"><center>
+                    <label class="form-check-label" style="border-bottom-style:solid;" for="defaultCheck1"><b>BASE 1</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid;" for="defaultCheck1"><b>BASE 2</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid;" for="defaultCheck1"><b>BASE 3</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid;" for="defaultCheck1"><b>BASE 4</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid;" for="defaultCheck1"><b>BASE 5</b></label><br><br>
+                    <label class="form-check-label"  for="defaultCheck1"><b>CONSTAT </b></label><svg xmlns="http://www.w3.org/2000/svg" style="margin-left:15px;" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>         
+                         </center>                                             
+                </div>
+                <div class="col-6"><center>
+                    <label class="form-check-label" style="border-bottom-style:solid; color:green;" for="defaultCheck1"><b>OK</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid; color:red;" for="defaultCheck1"><b>KO</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid; color:green;" for="defaultCheck1"><b>OK</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid; color:red;" for="defaultCheck1"><b>KO</b></label><br><br>
+                    <label class="form-check-label" style="border-bottom-style:solid; color:red;" for="defaultCheck1"><b>KO</b></label><br><br>
+                    <a href="#" class="btn btn-danger">KO</a>                
+                               </center>
+                </div> 
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-3" id="parent">
+        <div class="card common" id="box1"  draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="card-header" style="background-color: #696969; color:#ffffff;">
+            <b>Details Clients Declaratifs</b>
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+
+                <div class="col">
+                  <label class="form-check-label" for="nom" id="lblnom"><b>Nom</b></label><br>
+                  <label class="form-check-label" for="nom1" id="lblnom1">"Nom"</label><br>                               
+                  <label class="form-check-label" for="prenom" id="lblprenom"><b>Prenom</b></label><br>
+                  <label class="form-check-label" for="prenom1" id="lblprenom1">"Prenom"</label><br>  
+                  <label class="form-check-label " for="adresse" id="lbladresse"><b>Adresse</b></label><br>
+                  <label class="form-check-label" for="adresse" id="lbladresse1">"Adresse"</label><br>  
+                  <label class="form-check-label" for="defaultCheck1"><b>Cp Ville</b></label><br>
+                 <div id="googleMap" style="width:100%;height:50px;"></div>  
+                  <script>
+                    function myMap() {
+                      var mapProp = {
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:5,
+                      };
+                      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+                  </script>
+                  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>   
+                </div> 
+
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>Date de Naissance</b></label><br>
+                  <label class="form-check-label" for="defaultCheck1">"Date de Naissance"</label><br>                                 
+                  <label class="form-check-label" for="defaultCheck1"><b>Lieu de Naissance</b></label><br>
+                  <label class="form-check-label" for="defaultCheck1">"Lieu de Naissance"</label><br>  
+                </div>
+
+                <div class="col">
+                  <img src="assets/img/user.png" style="width: 120px; height:120px;" alt="user">
+                </div>
+
+              </div>
+            </div>
+            <br>
+            <b>OFFRES FREEMIUM/PREMIUM</b>
+              
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>Mail</b></label>
+                  <label class="form-check-label" for="defaultCheck1">"Mail"</label><br>                                 
+                  <label class="form-check-label" for="defaultCheck1"><b>Telephone</b></label>
+                  <label class="form-check-label" for="defaultCheck1">"Telephone"</label><br>  
+                </div>
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>Fiscal USA</b></label>
+                  <label class="form-check-label" for="defaultCheck1">"Fiscal USA"</label><br>                                 
+                  <label class="form-check-label" for="defaultCheck1"><b>Politique</b></label>
+                  <label class="form-check-label" for="defaultCheck1">"Politique"</label><br>  
+                            
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-style: solid;">
+            <div class="card-body">
+              <div class="row" >
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>CGU</b></label> 
+                </div>
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>DATE AFFICHAGE</b></label>    
+                  <label class="form-check-label" for="defaultCheck1"><b>DATE VALIDATION</b></label>      <br>                        
+                </div>
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>04/12/2020</b></label>  </br>                            
+                  <label class="form-check-label" for="defaultCheck1"><b>01/02/1996</b></label>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border-style: solid;">
+            <div class="card-body">
+              <div class="row" >
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>Si COMMERCANT</b></label> 
+                </div>
+                <div class="col">
+                  <label class="form-check-label" for="defaultCheck1"><b>FORMEL</b></label>                               
+                  <label class="form-check-label" for="defaultCheck1"><b>INFORMEL</b></label> 
+                </div>
+                <div class="col">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio12" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio22" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                  </div>                            
+                  <div class="form-check form-check-inline">
+                      <a href="#" class="btn btn-success">OUI</a>  
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" style="background-color: #696969; color:#ffffff;">
+              <b>Signature et Tampon Entreprise</b>
+            </div>
+            <div class="card-body">
+              <div class="row justify-content-between">
+                <div class="col-8">
+                  <p> Visionneuse</p> <p>
+                  <div class="card-body">
+                <iframe src="assets/img/CNI.pdf" width="100%" height="200px">
+                test
+                </iframe>
+              </div>
+                </div>
+                <div class="col-4">
+                  Contrôle
+                  <p style="color:brown;">Scanner
+                    <p style="margin-top:-15px;">
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-success">OUI</a>                       </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-danger">NON</a>  
+                      </div>  
+                    </p>
+                  </p>
+                  <p style="color:brown;">Tampon
+                    <p style="margin-top:-15px;">
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-success">OUI</a>  
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-danger">NON</a>  
+                      </div> 
+                    </p>
+                  </p>                      
+                </div>
+              </div>
+            </div>
+                    
+            <div class="card" style="border-style: solid;">
+              <div class="card-header" style="background-color: #696969; color:#ffffff;">
+                <b>Observation</b>
+              </div>
+              <div class="card-body">
+                <div class="row" >
+                  <div class="col-5">
+                    <textarea id="txt" name="txt" rows="3" cols="18" placeholder="Observation"></textarea>
+                  </div>
+                  <div class="col-7">
+                    <label class="form-check-label" for="defaultCheck1"><b>Appel Client</b></label>
+                    <label class="form-check-label" for="defaultCheck1">"Date/Heure"</label><br>                                 
+                    <label class="form-check-label" for="defaultCheck1"><b>Telephone</b></label>
+                    <label class="form-check-label" for="defaultCheck1">"Date/Heure"</label><br><br>
+                    <p style="margin-top:-15px;">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>PENDING</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>EN ATTENTE DOC</b></label>
+                      </div> 
+                    </p>                 
+                  </div>  
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="border-style: solid;">
+              <div class="card-body">
+                <div class="row" >
+                  <div class="col-3">
+                    <label class="form-check-label"  for="defaultCheck1"><b>Systeme</b></label> 
+                  </div>
+                  <div class="col-6">
+                    <p style="margin-top:-15px;">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>VALIDABLE</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON VALIDABLE</b></label>
+                      </div> 
+                    </p>
+                  </div>
+                  <div class="col-1">
+                    <a href="#" class="btn btn-success">VALIDER</a>                               
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="wrapper">
+
+            <div class="card">
+              <div class="card-header" style="background-color: #696969; color:#ffffff;">
+                <b>Visionneuse</b>
+              </div>
+              <div class="card-body">
+                <iframe src="assets/img/CNI.pdf" width="100%" height="500px"></iframe>
+              </div>
+            </div>
+      
+
+              <!--IDENTIFICATION ENTREPRISE-->
+      
+        <div class="card">
+          <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
+              <b>Identification Entreprise</b>
+          </div>
+
+          <div class="card-body">
+
+
+            <ul id="example4">
+              <li>
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-8">
+                      <label class="form-check-label" for="defaultCheck1"><b>RCCN (IDENTIQUE)</b></label>     <br>                          
+                      <label class="form-check-label" for="defaultCheck1"><b>NOM ET PRENOM REPRESENTANT</b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>ADRESSE ENTREPRISE</b></label> <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                     
+                    <br><br>
+                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+                    </div>                              
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-8">
+                      <label class="form-check-label" for="defaultCheck1"><b>RCCN (IDENTIQUE)</b></label>     <br>                          
+                      <label class="form-check-label" for="defaultCheck1"><b>NOM ET PRENOM REPRESENTANT</b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>ADRESSE ENTREPRISE</b></label> <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                     
+                    <br><br>
+                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+                    </div>                              
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-8">
+                      <label class="form-check-label" for="defaultCheck1"><b>RCCN (IDENTIQUE)</b></label>     <br>                          
+                      <label class="form-check-label" for="defaultCheck1"><b>NOM ET PRENOM REPRESENTANT</b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>ADRESSE ENTREPRISE</b></label> <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                     
+                    <br><br>
+                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+                    </div>                              
+                  </div>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+
+        </div>
+
+            <!--IDENTIFICATION ENTREPRISE-->
+
+<!--JUSTIFICATIF ADRESSE ENTREPRISE-->
+      
+<div class="card">
+  <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
+      <b>Justificatif Adresse Entreprise</b>
+  </div>
+
+  <div class="card-body">
+
+
+    <ul id="example5">
+      <li>
+        <div class="card-body">
+          <div class="row" >
+            <div class="col-8">
+              <label class="form-check-label" for="defaultCheck1"><b>NOM ENTREPRISE</b></label><br>                          
+              <label class="form-check-label" for="defaultCheck1"><b>SIEGE</b></label> <br>
+            </div>
+            <div class="col-4">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+              </div>
+             
+            <br><br>
+              <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+            </div>                              
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="card-body">
+          <div class="row" >
+            <div class="col-8">
+              <label class="form-check-label" for="defaultCheck1"><b>NOM ENTREPRISE</b></label><br>                          
+              <label class="form-check-label" for="defaultCheck1"><b>SIEGE</b></label> <br>
+            </div>
+            <div class="col-4">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+              </div>
+             
+            <br><br>
+              <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+            </div>                              
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="card-body">
+          <div class="row" >
+            <div class="col-8">
+              <label class="form-check-label" for="defaultCheck1"><b>NOM ENTREPRISE</b></label><br>                          
+              <label class="form-check-label" for="defaultCheck1"><b>SIEGE</b></label> <br>
+            </div>
+            <div class="col-4">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+              </div>
+             
+            <br><br>
+              <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+            </div>                              
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+
+    <!--JUSTIFICATIF ADRESSE ENTREPRISE-->
+
+
+
+          </div>
+      </div>
+
+      <div class="col-md-3">
+
+           <div class="wrapper3">
+
+                         <!--identite-->
+                         <div class="card">
+                          <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
+                             <div class="row align-items-start">
+                               <div class="col">
+                                <b>Identité</b>
+                               </div>
+                               <div class="col-4">
+                          
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>Selectionner</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                               </div>
+                             </div>
+                          </div>
+                
+                          <div class="card-body">
+            
+                
+                            <ul id="example0">
+                              <li>
+                                <div class="card-body">
+                                  <div class="row" >
+                                    <div class="col-8">
+                                      <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                                      <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>LIEU DE NAISSANCE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>NATIONALITE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>N°IDENTITE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1">"ABCDEF12"</label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>PHOTO ID PROFIL</b></label> <br>
+                                    </div>
+                                    <div class="col-4">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <br></br>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div><br><br>
+                                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                                    </div>                              
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="card-body">
+                                  <div class="row" >
+                                    <div class="col-8">
+                                      <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                                      <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>LIEU DE NAISSANCE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>NATIONALITE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>N°IDENTITE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1">"ABCDEF12"</label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>PHOTO ID PROFIL</b></label> <br>
+                                    </div>
+                                    <div class="col-4">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <br></br>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div><br><br>
+                                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a>  
+                                    </div>                              
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="card-body">
+                                  <div class="row" >
+                                    <div class="col-8">
+                                      <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                                      <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>LIEU DE NAISSANCE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>NATIONALITE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>N°IDENTITE </b></label> <br>
+                                      <label class="form-check-label" for="defaultCheck1">"ABCDEF12"</label> <br>
+                                      <label class="form-check-label" for="defaultCheck1"><b>PHOTO ID PROFIL</b></label> <br>
+                                    </div>
+                                    <div class="col-4">
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div>
+                                      <br></br>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                                      </div><br><br>
+                                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                                    </div>                              
+                                  </div>
+                                </div>
+                              </li>
+                              
+                            </ul>
+                          </div>
+            
+                        </div>
+                         <!--identite-->
+
+
+              <!--justificatif-->
+      
+        <div class="card">
+          <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
+            <div class="row align-items-start">
+              <div class="col">
+               <b>Justificatif de domicile</b>
+              </div>
+              <div class="col-4">
+         
+               <select class="form-select" aria-label="Default select example">
+                 <option selected>Selectionner</option>
+                 <option value="1">One</option>
+                 <option value="2">Two</option>
+                 <option value="3">Three</option>
+               </select>
+              </div>
+            </div>
+         </div>
+
+          <div class="card-body">
+
+
+            <ul id="example1">
+              <li>
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-8">
+                      <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                      <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE (IDENTIQUE)</b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>DOCUMENT CORRECT </b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>MOINS DE 3 MOIS </b></label> <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-success">OUI</a>  
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#" name="" class="btn btn-danger">NON</a>  
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-success">OUI</a>  
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#"  class="btn btn-danger">NON</a>  
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-success">OUI</a>  
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <a href="#" class="btn btn-danger">NON</a>  
+                      </div><br><br>
+                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                    </div>                              
+                  </div>
+                </div>
+              </li>
+    
+        
+              <li>
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-8">
+                      <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                      <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE (IDENTIQUE) </b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>DOCUMENT CORRECT </b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>MOINS DE 3 MOIS </b></label> <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div><br><br>
+                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+                    </div>                              
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-8">
+                      <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                      <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE (IDENTIQUE)</b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>DOCUMENT CORRECT </b></label> <br>
+                      <label class="form-check-label" for="defaultCheck1"><b>MOINS DE 3 MOIS </b></label> <br>
+                    </div>
+                    <div class="col-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                      </div><br><br>
+                      <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
+                    </div>                              
+                  </div>
+                </div>
+              </li>
+        
+            </ul>
+          </div>
+
+        </div>
+
+            <!--Justificatif-->
+
+
+            <!--Identité Mandataire-->
+
+
+            <div class="card">
+              <div class="card-header" style="background-color: #696969; color:#ffffff;">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <b>Identité Mandataire</b>
+                  </div>
+                  <div class="col-4">
+             
+                   <select class="form-select" aria-label="Default select example">
+                     <option selected>Selectionner</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
+              
+		
+                <ul id="example2">
+                  <li>
+                    <div class="card-body">
+                      <div class="row" >
+                        <div class="col-8">
+                          <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                          <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE </b></label> <br>
+                          <label class="form-check-label" for="defaultCheck1"><b>LIEU DE NAISSANCE </b></label> <br>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div><br><br>
+                          <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                        </div>                              
+                      </div>
+                    </div>
+                  </li>
+        
+            
+                  <li>
+                    <div class="card-body">
+                      <div class="row" >
+                        <div class="col-8">
+                          <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                          <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE </b></label> <br>
+                          <label class="form-check-label" for="defaultCheck1"><b>LIEU DE NAISSANCE </b></label> <br>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div><br><br>
+                          <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                        </div>                              
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="card-body">
+                      <div class="row" >
+                        <div class="col-8">
+                          <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
+                          <label class="form-check-label" for="defaultCheck1"><b>DATE DE NAISSANCE </b></label> <br>
+                          <label class="form-check-label" for="defaultCheck1"><b>LIEU DE NAISSANCE </b></label> <br>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div><br><br>
+                          <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                        </div>                              
+                      </div>
+                    </div>
+                  </li>
+            
+                </ul>
+              </div> 
+
+                 <!--Identité Mandataire-->
+
+
+                             <!--Banque-->
+
+
+            <div class="card">
+              <div class="card-header" style="background-color: #696969; color:#ffffff;">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <b>Banque</b>
+                  </div>
+                  <div class="col-4">
+             
+                   <select class="form-select" aria-label="Default select example">
+                     <option selected>Selectionner</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
+              
+		
+                <ul id="example3">
+                  <li>
+                    <div class="card-body">
+                      <div class="row" >
+                        <div class="col-8">
+                          <label class="form-check-label" for="defaultCheck1"><b>RIB CONFORME</b></label>     <br>                          
+                          <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE) </b></label> <br>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div><br><br>
+                          <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                        </div>                              
+                      </div>
+                    </div>
+                  </li>
+        
+            
+                  <li>
+                    <div class="card-body">
+                      <div class="row" >
+                        <div class="col-8">
+                          <label class="form-check-label" for="defaultCheck1"><b>RIB CONFORME</b></label>     <br>                          
+                          <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE) </b></label> <br>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div><br><br>
+                          <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                        </div>                              
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="card-body">
+                      <div class="row" >
+                        <div class="col-8">
+                          <label class="form-check-label" for="defaultCheck1"><b>RIB CONFORME</b></label>     <br>                          
+                          <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE) </b></label> <br>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><b>OUI</b></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><b>NON</b></label>
+                          </div><br><br>
+                          <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
+                        </div>                              
+                      </div>
+                    </div>
+                  </li>
+            
+                </ul>
+              </div> 
+
+                 <!--Banque-->
+
+
+
+
+
+      </div>
       </div>
     </div>
-    <div class="jumbotron page" id="page2">
-      <h1 class="display-3">Not Another Jumbotron</h1>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-    </div>
-    <div class="jumbotron page" id="page3">
-      <h1 class="display-3">Data. Data. Data.</h1>
-      <p>This example is a quick exercise to illustrate how the default responsive navbar works. It's placed within a <code>.container</code> to limit its width and will scroll with the rest of the page's content.</p>
-      <p><a class="btn btn-lg btn-primary" href="../../components/navbar" role="button">View navbar docs »</a></p>
-    </div>
-    <div class="jumbotron page" id="page4">
-      <h1 style="-webkit-user-select: auto;">Buy Now!</h1>
-      <p class="lead" style="-webkit-user-select: auto;">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-      <p style="-webkit-user-select: auto;"><a class="btn btn-lg btn-success" href="#" role="button" style="-webkit-user-select: auto;">Get started today</a></p>
-    </div>
-    <div class="jumbotron page" id="page5">
-      <h1 class="cover-heading">Cover your page.</h1>
-      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-      <p class="lead"><a href="#" class="btn btn-lg btn-primary">Learn more</a></p>
-    </div>
-    <ul id="pagination-demo" class="pagination-lg pull-right"></ul>
-  </div>
+  
+  </main>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <!-- Plugin file -->
+  <script src="assets/js/addons/datatables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      document.body.style.zoom = "70%" ;
+      $('#dtMaterialDesignExample').DataTable();
+      $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
+        $(this).parent().append($(this).children());
+      });
+
+      $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
+        const $this = $(this);
+        $this.attr("placeholder", "Search");
+        $this.removeClass('form-control-sm');
+      });
+
+      $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
+      $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
+      $('#dtMaterialDesignExample_wrapper select').removeClass('custom-select custom-select-sm form-control form-control-sm');
+      $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
+      $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
+      $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
+    });
+
+    $('#dtMaterialDesignExample').DataTable({
+        "pageLength": 8
+      });
+    $('.dataTables_length').addClass('bs-select');
+    
+
+  </script> 
+
+<script>
+    
+  var table = document.getElementById('dtMaterialDesignExample');
+
+
+  
+  for(var i = 1; i < table.rows.length; i++)
+  {
+      table.rows[i].onclick = function()
+      {
+
+          var st = this.cells[0].innerHTML ;
+          console.log(st);
+          var st1 = st.split(' ');
+          console.log(st1[1]);
+
+        st1[1] = st1[1].replace('<br>', '');
+        console.log("st2 = " + st1[1]);
+
+        console.log("st3 = " + st1[2]);
+
+
+0
+           //rIndex = this.rowIndex;
+           document.getElementById("lblnom1").innerHTML = st1[0] ;
+           document.getElementById("lblprenom1").innerHTML = st1[1];
+           document.getElementById("lbladresse1").innerHTML = st1[2];
+           //document.getElementById("lname").value = this.cells[1].innerHTML;
+          // document.getElementById("age").value = this.cells[2].innerHTML;
+      };
+  }
+
+</script>
+
+  <script src="Sortable.min.js"></script>
+  <script>
+  
+      const dragArea = document.querySelector(".wrapper3");
+      new Sortable(dragArea,{
+        animation:350,
+        group: 'shared',
+        swap:true
+      });
+      const dragArea1 = document.querySelector(".wrapper");
+      new Sortable(dragArea1,{
+        animation:350,
+        group: 'shared',
+        swap:true
+      });
+  </script>
+  <script src="sscript.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="jquery.paginate.js"></script>
+
+	<script>
+		//call paginate
+		$('#example0').paginate();
+    $('#example1').paginate();
+    $('#example2').paginate();
+    $('#example3').paginate();
+    $('#example4').paginate();
+    $('#example5').paginate();
+	</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://www.solodev.com/assets/pagination/jquery.twbsPagination.js"></script>
-<script src="paging.js"></script>
 </html>
