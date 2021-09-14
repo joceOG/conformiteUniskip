@@ -34,13 +34,14 @@
         cursor: pointer;transition: all .25s ease-in-out;
     }
     table tr:not(:only-child):hover{background-color: rgb(18, 139, 209);}
+
+
 </style>
 
 </head>
 
 <body>
  
-
   <main class="page landing-page">
     <div class="row screen2">
       
@@ -71,8 +72,8 @@
               <div class="tab-content">
                 <div id="home" class="container tab-pane active"><br>
                       <h3>Clients Pending</h3>
-                      <div class="dtMaterialDesignExample_wrapper" width="80%">
-                        <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0"  height="50%">
+                      <div id = "dtMaterialDesignExample_wrapper" class="dtMaterialDesignExample_wrapper">
+                        <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0">
                           <thead>
                             <tr>
                               <th class="th-sm">Nom/Email</th>
@@ -684,7 +685,9 @@
                     </div>
                     <div class="col-4">
                       <center>
-                      <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
+                      <div class="checkdiv1" id="checkdiv1" >
+                      <input type="checkbox" name="checker1" id="checker1" class="checker1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled data-offstyle="danger"><br>
+                    </div>
                       <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
                       <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
                      </center>
@@ -1241,6 +1244,12 @@
   <script>
     $(document).ready(function () {
       document.body.style.zoom = "60%" ;
+      jQuery(function($){
+          $('#checkdiv1').click(function(e){
+            $("input.checker1").prop("disabled", false);       
+            e.stopPropagation();
+          });
+        });
       $('#dtMaterialDesignExample').DataTable();
       $('#dtMaterialDesignExample2').DataTable();
       $('#dtMaterialDesignExample3').DataTable();
