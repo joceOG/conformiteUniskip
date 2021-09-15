@@ -34,8 +34,20 @@
         cursor: pointer;transition: all .25s ease-in-out;
     }
     table tr:not(:only-child):hover{background-color: rgb(18, 139, 209);}
+            input[type='checkbox'][disabled] {
+            color: black;
+        }
+        
+    .btn-success.disabled, .btn-success:disabled {
+    border-color: #e9b97a;
+    opacity: 0.19;
+    
+     }
 
-
+     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+          color: #fff;
+          background-color: #f1870d;
+      }
 </style>
 
 </head>
@@ -177,7 +189,7 @@
     
                 </div>
                 <div id="menu1" class="container tab-pane fade"><br>
-                  <h3>Menu 1</h3>
+                  <h3>Clients Alertes</h3>
                   <div class="dtMaterialDesignExample_wrapper" width="80%">
                     <table id="dtMaterialDesignExample2" class="table table-striped" cellspacing="0"  height="50%">
                       <thead>
@@ -279,7 +291,7 @@
                   </div>
                 </div>
                 <div id="menu2" class="container tab-pane fade"><br>
-                  <h3>Menu 2</h3>
+                  <h3>Clients Update</h3>
                   <div class="dtMaterialDesignExample_wrapper" width="80%">
                     <table id="dtMaterialDesignExample3" class="table table-striped" cellspacing="0"  height="50%">
                       <thead>
@@ -676,6 +688,9 @@
 
             <ul id="example4">
               <li>
+                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+               </div>
                 <div class="card-body">
                   <div class="row" >
                     <div class="col-8">
@@ -685,13 +700,10 @@
                     </div>
                     <div class="col-4">
                       <center>
-                      <div class="checkdiv1" id="checkdiv1" >
-                      <input type="checkbox" name="checker1" id="checker1" class="checker1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled data-offstyle="danger"><br>
-                    </div>
-                      <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                      <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
-                     </center>
-                                           
+                      <div class="checkdiva1" id="checkdiva1" ><input type="checkbox" name="checkera1" id="checkera1" class="checkera1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                      <div class="checkdiva2" id="checkdiva2" ><input type="checkbox" name="checkera2" id="checkera2" class="checkera2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                      <div class="checkdiva3" id="checkdiva3" ><input type="checkbox" name="checkera3" id="checkera3" class="checkera3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
+                     </center>                                       
                     <br><br>
                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
                     </div>                              
@@ -700,6 +712,9 @@
               </li>
 
               <li>
+                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+               </div>
                 <div class="card-body">
                   <div class="row" >
                     <div class="col-8">
@@ -709,9 +724,9 @@
                     </div>
                     <div class="col-4">
                       <center>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                        <div class="checkdivb1" id="checkdivb1" ><input type="checkbox" name="checkerb1" id="checkerb1" class="checkerb1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivb2" id="checkdivb2" ><input type="checkbox" name="checkerb2" id="checkerb2" class="checkerb2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                        <div class="checkdivb3" id="checkdivb3" ><input type="checkbox" name="checkerb3" id="checkerb3" class="checkerb3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                        </center>
                      
                     <br><br>
@@ -722,6 +737,9 @@
               </li>
 
               <li>
+                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+               </div>
                 <div class="card-body">
                   <div class="row" >
                     <div class="col-8">
@@ -731,9 +749,9 @@
                     </div>
                     <div class="col-4">
                       <center>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                        <div class="checkdivc1" id="checkdivc1" ><input type="checkbox" name="checkerc1" id="checkerc1" class="checkerc1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivc2" id="checkdivc2" ><input type="checkbox" name="checkerc2" id="checkerc2" class="checkerc2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                        <div class="checkdivc3" id="checkdivc3" ><input type="checkbox" name="checkerc3" id="checkerc3" class="checkerc3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                        </center>
                      
                     <br><br>
@@ -762,6 +780,9 @@
 
     <ul id="example5">
       <li>
+        <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+          <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+       </div>
         <div class="card-body">
           <div class="row" >
             <div class="col-8">
@@ -769,9 +790,9 @@
               <label class="form-check-label" for="defaultCheck1"><b>SIEGE</b></label> <br>
             </div>
             <div class="col-4">
-               <center>
-                <input type="checkbox" name = "check1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                <input type="checkbox" name = "check2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+              <center>
+                <div class="checkdivd1" id="checkdivd1" ><input type="checkbox" name="checkerd1" id="checkerd1" class="checkerd1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                <div class="checkdivd2" id="checkdivd2" ><input type="checkbox" name="checkerd2" id="checkerd2" class="checkerd2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                </center>
              
             <br><br>
@@ -782,6 +803,9 @@
       </li>
 
       <li>
+        <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+          <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+       </div>
         <div class="card-body">
           <div class="row" >
             <div class="col-8">
@@ -790,8 +814,8 @@
             </div>
             <div class="col-4">
               <center>
-                <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                <div class="checkdive1" id="checkdive1" ><input type="checkbox" name="checkere1" id="checkere1" class="checkere1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                <div class="checkdive2" id="checkdive2" ><input type="checkbox" name="checkere2" id="checkere2" class="checkere2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                </center>
              
             <br><br>
@@ -802,6 +826,9 @@
       </li>
 
       <li>
+        <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+          <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+       </div>
         <div class="card-body">
           <div class="row" >
             <div class="col-8">
@@ -810,8 +837,8 @@
             </div>
             <div class="col-4">
               <center>
-                <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                <div class="checkdivf1" id="checkdivf1" ><input type="checkbox" name="checkerf1" id="checkerf1" class="checkerf1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                <div class="checkdivf2" id="checkdivf2" ><input type="checkbox" name="checkerf2" id="checkerf2" class="checkerf2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                </center>
              
             <br><br>
@@ -840,27 +867,22 @@
                          <!--identite-->
                          <div class="card">
                           <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
-                             <div class="row align-items-start">
+                             
                                <div class="col">
                                 <b>Identité</b>
                                </div>
-                               <div class="col-4">
-                          
-                                <select class="form-select" aria-label="Default select example">
-                                  <option selected>Selectionner</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                               </div>
-                             </div>
+                                                          
                           </div>
                 
                           <div class="card-body">
-            
-                
+                               
+                                           
                             <ul id="example0">
                               <li>
+                                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                                    <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                                 </div>
+
                                 <div class="card-body">
                                   <div class="row" >
                                     <div class="col-8">
@@ -874,11 +896,11 @@
                                     </div>
                                     <div class="col-4">
                                       <center>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                                        <div class="checkdivg1" id="checkdivg1" ><input type="checkbox" name="checkerg1" id="checkerg1" class="checkerg1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                                        <div class="checkdivg2" id="checkdivg2" ><input type="checkbox" name="checkerg2" id="checkerg2" class="checkerg2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                                        <div class="checkdivg3" id="checkdivg3" ><input type="checkbox" name="checkerg3" id="checkerg3" class="checkerg3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                                        <div class="checkdivg4" id="checkdivg4" ><input type="checkbox" name="checkerg4" id="checkerg4" class="checkerg4" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br><br></div>  
+                                        <div class="checkdivg5" id="checkdivg5" ><input type="checkbox" name="checkerg5" id="checkerg5" class="checkerg5" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                                        </center>
                                       <br><br>
                                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
@@ -888,7 +910,10 @@
                               </li>
 
                               <li>
-                                <div class="card-body">
+                                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                               </div>
+                                <div class="card-body">                              
                                   <div class="row" >
                                     <div class="col-8">
                                       <label class="form-check-label" for="defaultCheck1"><b>NOM PRENOM (IDENTIQUE)</b></label>     <br>                          
@@ -901,11 +926,11 @@
                                     </div>
                                     <div class="col-4">
                                       <center>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                                        <div class="checkdivg1" id="checkdivh1" ><input type="checkbox" name="checkerh1" id="checkerh1" class="checkerh1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                                        <div class="checkdivg2" id="checkdivh2" ><input type="checkbox" name="checkerh2" id="checkerh2" class="checkerh2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                                        <div class="checkdivg3" id="checkdivh3" ><input type="checkbox" name="checkerh3" id="checkerh3" class="checkerh3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                                        <div class="checkdivg4" id="checkdivh4" ><input type="checkbox" name="checkerh4" id="checkerh4" class="checkerh4" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br><br></div>  
+                                        <div class="checkdivg5" id="checkdivh5" ><input type="checkbox" name="checkerh5" id="checkerh5" class="checkerh5" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                                        </center><br><br>
                                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a>  
                                     </div>                              
@@ -914,6 +939,9 @@
                               </li>
 
                               <li>
+                                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                               </div>
                                 <div class="card-body">
                                   <div class="row" >
                                     <div class="col-8">
@@ -927,11 +955,11 @@
                                     </div>
                                     <div class="col-4">
                                       <center>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br><br>
-                                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                                        <div class="checkdivi1" id="checkdivi1" ><input type="checkbox" name="checkeri1" id="checkeri1" class="checkeri1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                                        <div class="checkdivi2" id="checkdivi2" ><input type="checkbox" name="checkeri2" id="checkeri2" class="checkeri2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                                        <div class="checkdivi3" id="checkdivi3" ><input type="checkbox" name="checkeri3" id="checkeri3" class="checkeri3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                                        <div class="checkdivi4" id="checkdivi4" ><input type="checkbox" name="checkeri4" id="checkeri4" class="checkeri4" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br><br></div>  
+                                        <div class="checkdivi5" id="checkdivi5" ><input type="checkbox" name="checkeri5" id="checkeri5" class="checkeri5" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                                        </center><br><br>
                                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                                     </div>                              
@@ -950,20 +978,9 @@
       
         <div class="card">
           <div class="card-header" style="background-color: #696969; ; color:#ffffff;">
-            <div class="row align-items-start">
               <div class="col">
                <b>Justificatif de domicile</b>
               </div>
-              <div class="col-4">
-         
-               <select class="form-select" aria-label="Default select example">
-                 <option selected>Selectionner</option>
-                 <option value="1">One</option>
-                 <option value="2">Two</option>
-                 <option value="3">Three</option>
-               </select>
-              </div>
-            </div>
          </div>
 
           <div class="card-body">
@@ -971,6 +988,9 @@
 
             <ul id="example1">
               <li>
+                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+               </div>
                 <div class="card-body">
                   <div class="row" >
                     <div class="col-8">
@@ -981,11 +1001,11 @@
                     </div>
                     <div class="col-4">
                       <center>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
-                       </center><br><br>
+                        <div class="checkdivj1" id="checkdivj1" ><input type="checkbox" name="checkerj1" id="checkerj1" class="checkerj1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivj2" id="checkdivj2" ><input type="checkbox" name="checkerj2" id="checkerj2" class="checkerj2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                        <div class="checkdivj3" id="checkdivj3" ><input type="checkbox" name="checkerj3" id="checkerj3" class="checkerj3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivj4" id="checkdivj4" ><input type="checkbox" name="checkerj4" id="checkerj4" class="checkerj4" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>                       
+                      </center><br><br>
                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                     </div>                              
                   </div>
@@ -994,6 +1014,9 @@
     
         
               <li>
+                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+               </div>
                 <div class="card-body">
                   <div class="row" >
                     <div class="col-8">
@@ -1004,10 +1027,10 @@
                     </div>
                     <div class="col-4">
                       <center>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                        <div class="checkdivk1" id="checkdivk1" ><input type="checkbox" name="checkerk1" id="checkerk1" class="checkeri1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivk2" id="checkdivk2" ><input type="checkbox" name="checkerk2" id="checkerk2" class="checkeri2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                        <div class="checkdivk3" id="checkdivk3" ><input type="checkbox" name="checkerk3" id="checkerk3" class="checkeri3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivk4" id="checkdivk4" ><input type="checkbox" name="checkerk4" id="checkerk4" class="checkeri4" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>  
                        </center><br><br>
                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
                     </div>                              
@@ -1016,6 +1039,9 @@
               </li>
 
               <li>
+                <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                  <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+               </div>
                 <div class="card-body">
                   <div class="row" >
                     <div class="col-8">
@@ -1026,11 +1052,10 @@
                     </div>
                     <div class="col-4">
                       <center>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                        <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
-                       </center><br><br>
+                        <div class="checkdivk1" id="checkdivl1" ><input type="checkbox" name="checkerl1" id="checkerl1" class="checkerl1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                        <div class="checkdivk2" id="checkdivl2" ><input type="checkbox" name="checkerl2" id="checkerl2" class="checkerl2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                        <div class="checkdivk2" id="checkdivl3" ><input type="checkbox" name="checkerl3" id="checkerl3" class="checkerl2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                        <div class="checkdivk3" id="checkdivl4" ><input type="checkbox" name="checkerl4" id="checkerl4" class="checkerl4" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>                       </center><br><br>
                       <a href="#" class="btn btn-outline-secondary">AFFICHER</a>   
                     </div>                              
                   </div>
@@ -1050,25 +1075,17 @@
 
             <div class="card">
               <div class="card-header" style="background-color: #696969; color:#ffffff;">
-                <div class="row align-items-start">
                   <div class="col">
                     <b>Identité Mandataire</b>
                   </div>
-                  <div class="col-4">
-             
-                   <select class="form-select" aria-label="Default select example">
-                     <option selected>Selectionner</option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                   </select>
-                  </div>
-                </div>
               </div>
               
 		
                 <ul id="example2">
                   <li>
+                    <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                      <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                   </div>
                     <div class="card-body">
                       <div class="row" >
                         <div class="col-8">
@@ -1078,10 +1095,9 @@
                         </div>
                         <div class="col-4">
                           <center>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                            <div class="checkdivm1" id="checkdivm1" ><input type="checkbox" name="checkerm1" id="checkerm1" class="checkerm1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                            <div class="checkdivm2" id="checkdivm2" ><input type="checkbox" name="checkerm2" id="checkerm2" class="checkerm2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                            <div class="checkdivm3" id="checkdivm3" ><input type="checkbox" name="checkerm3" id="checkerm3" class="checkerm3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>    
                            </center><br><br>
                           <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                         </div>                              
@@ -1091,6 +1107,9 @@
         
             
                   <li>
+                    <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                      <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                   </div>
                     <div class="card-body">
                       <div class="row" >
                         <div class="col-8">
@@ -1100,10 +1119,9 @@
                         </div>
                         <div class="col-4">
                           <center>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                            <div class="checkdivn1" id="checkdivn1" ><input type="checkbox" name="checkern1" id="checkern1" class="checkern1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                            <div class="checkdivn2" id="checkdivn2" ><input type="checkbox" name="checkern2" id="checkern2" class="checkern2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                            <div class="checkdivn3" id="checkdivn3" ><input type="checkbox" name="checkern3" id="checkern3" class="checkern3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>   
                            </center><br><br>
                           <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                         </div>                              
@@ -1112,6 +1130,9 @@
                   </li>
 
                   <li>
+                    <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                      <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                   </div>
                     <div class="card-body">
                       <div class="row" >
                         <div class="col-8">
@@ -1121,10 +1142,9 @@
                         </div>
                         <div class="col-4">
                           <center>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                            <div class="checkdivo1" id="checkdivo1" ><input type="checkbox" name="checkero1" id="checkero1" class="checkero1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                            <div class="checkdivo2" id="checkdivo2" ><input type="checkbox" name="checkero2" id="checkero2" class="checkero2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
+                            <div class="checkdivo3" id="checkdivo3" ><input type="checkbox" name="checkero3" id="checkero3" class="checkero3" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"></div>   
                            </center><br><br>
                           <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                         </div>                              
@@ -1143,25 +1163,17 @@
 
             <div class="card">
               <div class="card-header" style="background-color: #696969; color:#ffffff;">
-                <div class="row align-items-start">
                   <div class="col">
                     <b>Banque</b>
                   </div>
-                  <div class="col-4">
-             
-                   <select class="form-select" aria-label="Default select example">
-                     <option selected>Selectionner</option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                   </select>
-                  </div>
-                </div>
               </div>
               
 		
                 <ul id="example3">
                   <li>
+                    <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                      <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                   </div>
                     <div class="card-body">
                       <div class="row" >
                         <div class="col-8">
@@ -1170,8 +1182,8 @@
                         </div>
                         <div class="col-4">
                           <center>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                            <div class="checkdivo1" id="checkdivo1" ><input type="checkbox" name="checkero1" id="checkero1" class="checkero1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                            <div class="checkdivo2" id="checkdivo2" ><input type="checkbox" name="checkero2" id="checkero2" class="checkero2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
                            </center><br><br>
                           <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                         </div>                              
@@ -1181,6 +1193,9 @@
         
             
                   <li>
+                    <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                      <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                   </div>
                     <div class="card-body">
                       <div class="row" >
                         <div class="col-8">
@@ -1189,8 +1204,8 @@
                         </div>
                         <div class="col-4">
                           <center>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                            <div class="checkdivp1" id="checkdivp1" ><input type="checkbox" name="checkerp1" id="checkerp1" class="checkerp1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                            <div class="checkdivp2" id="checkdivp2" ><input type="checkbox" name="checkerp2" id="checkerp2" class="checkerp2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
                            </center><br><br>
                           <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                         </div>                              
@@ -1199,6 +1214,9 @@
                   </li>
 
                   <li>
+                    <div class="col-4"><select class="form-select" aria-label="Default select example"><option selected>Selectionner</option>
+                      <option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select>                                                                                                  
+                   </div>
                     <div class="card-body">
                       <div class="row" >
                         <div class="col-8">
@@ -1207,8 +1225,8 @@
                         </div>
                         <div class="col-4">
                           <center>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger"><br>
-                            <input type="checkbox" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" data-offstyle="danger">
+                            <div class="checkdivq1" id="checkdivq1" ><input type="checkbox" name="checkerq1" id="checkerq1" class="checkerq1" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>
+                            <div class="checkdivq2" id="checkdivq2" ><input type="checkbox" name="checkerq2" id="checkerq2" class="checkerq2" data-size="xs" checked data-toggle="toggle" data-on="O" data-off="N" data-onstyle="success" disabled="disabled" data-offstyle="danger"><br></div>    
                            </center><br><br>
                           <a href="#" class="btn btn-outline-secondary">AFFICHER</a> 
                         </div>                              
@@ -1242,14 +1260,47 @@
   <!-- Plugin file -->
   <script src="assets/js/addons/datatables.min.js"></script>
   <script>
+
+
+
     $(document).ready(function () {
+    
       document.body.style.zoom = "60%" ;
-      jQuery(function($){
-          $('#checkdiv1').click(function(e){
-            $("input.checker1").prop("disabled", false);       
-            e.stopPropagation();
-          });
-        });
+      jQuery(function($){ $('#checkdiva1').click(function(e){  $("input.checkera1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdiva2').click(function(e){  $("input.checkera2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdiva3').click(function(e){  $("input.checkera3").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivb1').click(function(e){  $("input.checkerb1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivb2').click(function(e){  $("input.checkerb2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivb3').click(function(e){  $("input.checkerb3").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivc1').click(function(e){  $("input.checkerc1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivc2').click(function(e){  $("input.checkerc2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivc3').click(function(e){  $("input.checkerc3").prop("disabled", false);  e.stopPropagation(); }); });
+     
+      jQuery(function($){ $('#checkdivd1').click(function(e){  $("input.checkerd1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivd2').click(function(e){  $("input.checkerd2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdive1').click(function(e){  $("input.checkere1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdive2').click(function(e){  $("input.checkere2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivf1').click(function(e){  $("input.checkerf1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivf2').click(function(e){  $("input.checkerf2").prop("disabled", false);  e.stopPropagation(); }); });
+
+      jQuery(function($){ $('#checkdivg1').click(function(e){  $("input.checkerg1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivg2').click(function(e){  $("input.checkerg2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivg3').click(function(e){  $("input.checkerg3").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivg4').click(function(e){  $("input.checkerg4").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivg5').click(function(e){  $("input.checkerg5").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivh1').click(function(e){  $("input.checkerh1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivh2').click(function(e){  $("input.checkerh2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivh3').click(function(e){  $("input.checkerh3").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivh4').click(function(e){  $("input.checkerh4").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivh5').click(function(e){  $("input.checkerh5").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivi1').click(function(e){  $("input.checkeri1").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivi2').click(function(e){  $("input.checkeri2").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivi3').click(function(e){  $("input.checkeri3").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivi4').click(function(e){  $("input.checkeri4").prop("disabled", false);  e.stopPropagation(); }); });
+      jQuery(function($){ $('#checkdivi5').click(function(e){  $("input.checkeri5").prop("disabled", false);  e.stopPropagation(); }); });
+
+
+
       $('#dtMaterialDesignExample').DataTable();
       $('#dtMaterialDesignExample2').DataTable();
       $('#dtMaterialDesignExample3').DataTable();
